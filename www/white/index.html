@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="static/js/jquery-3.4.1.min.js"></script>
+    <title>TIMI大王的白块儿</title>
+    <style>
+        /* *{margin: 0;padding: 0;} */
+        /* body{position: relative;} */
+        body{
+            font-family: "Source Sans Pro";
+            /* text-align: center; */
+            /* color: white; */
+        }
+        #outer{
+            width: 422px;
+            height: 696px;
+            margin: auto;
+            /* margin-left: 10%; */
+            background-color:rgb(255, 255, 255);
+            border: 8px rgba(0, 0, 0, 0.3) solid;
+            /* float: left; */
+            overflow:hidden;
+        }
+        #inner6{
+            /* margin-left: 50%; */
+            margin-top: -835px;
+        }
+        .logins{
+            width: 350px;
+            height: 40%;
+            padding: 20px 0;
+            background-color: rgba(223, 225, 229, 0.99);
+            margin-top: -530px;
+            margin-left: 35.6px;
+            /* visibility: hidden; */
+            display: none;
+            z-index: 9;
+            opacity: 1;
+            overflow: hidden;
+            text-align: center;
+            border-radius: 30px;
+            position: absolute;
+            padding-top: 8px;
+            filter: drop-shadow(5px 5px 10px #afb5b2);
+        }
+        /*
+        @media (min-width: 768px) and (max-width:992px) {
+            #outer{
+                width: 400px;
+                height: 600px;
+            }
+        }
+        @media (min-width: 992px) {
+            #outer{
+                width: 422px;
+                height: 696px;
+            }
+        } */
+        #bg{
+            background: url(static/img/bg1.jpg) no-repeat;
+            /* background-size: cover; */
+        }
+        #bgg{
+            background-color: rgba(0, 0, 0, 0.4);
+            /* background:url(static/img/bg1.jpg) no-repeat; */
+        }
+        .bb{
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-size: contain;
+        }
+        .ss{
+            width: 25%;
+            height: 20%;
+            /* background-color: black; */
+            position: relative;
+        }
+        #t1{
+            width: 200px;
+            /* height: 400px;  */
+            background-color: aqua;
+            margin-top: 300px;
+            margin-left: 6%;
+            text-align: center;
+            /* margin-bottom: auto; */
+            /* position: fixed;
+            top: 46%;
+            left: 2%; */
+            font-family: source code pro;
+            font-size: 60px;
+            color: red;
+            font-weight:bold;
+            padding: 0px 0px;
+            /* float: left; */
+        }
+        #t2{
+            width: 200px;
+            background-color: aqua;
+            /* position: fixed; */
+            /* top: 4%;
+            left: 86%; */
+            /* float: left; */
+            font-family: source code pro;
+            font-size: 36px;
+            color: red;
+            font-weight:bold;
+            float: right;
+        }
+        /* .tt{
+            float: left;
+        } */
+        #start{
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            line-height: 146px;
+        }
+        #noo{
+            width: 100%;
+            height: 100%;
+            background: white;
+        }
+        .inn{
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            line-height: 146px;
+        }
+        .open{
+            /* visibility: visible; */
+            display: block;
+            opacity: 1;
+        }
+        #login #login_logo{
+            font-size: 26px;
+            font-weight: bold;
+            padding: 30px 0 0 123px;
+            float: left;
+            color: #18bf79;
+            margin-bottom: 10px;
+        }
+        #login #close{
+            font-size: 36px;
+            line-height:30px;
+            float: left;
+            font-weight: bold;
+            margin-left: 92px;
+            color: #18bf79;
+        }
+        #login #close:hover{
+            cursor:pointer;
+        }
+        input{
+            width: 240px;
+            /* margin-top: 10px; */
+            text-align: center;
+            /* border-radius: 20px; */
+            outline: 0 ;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            background-color: rgba(255, 255, 255, 0.4);
+            border-radius: 40px;
+            padding: 10px 15px;
+            margin: 0 auto 10px auto;
+            display: block;
+            font-size: 18px;
+            color: white;
+            transition-duration: 0.25s;
+            font-weight: 300;
+        }
+        button{
+            width: 260px;
+            color: white;
+            background: #18bf79;
+            border-radius: 40px;
+            outline: 0;
+            border: 0;
+            padding: 12px 15px;
+            font-size: 18px;
+            margin-top: 8px;
+            transition-duration: 0.25s;
+        }
+        /* .close{
+
+        } */
+        input:hover{
+            background-color: rgba(255,255,255,0.4);
+        }
+        input:focus{
+            background-color: white;
+            width: 280px;
+            color: #53e3a6;
+        }
+        button:active{
+            background-color: rgb(214, 252, 223);
+            color: #53e3a6;
+        }
+        #rank-div{
+            width: 354px;
+            height: 460px;
+            background: linear-gradient(50deg,#15cfc5,#216195);
+            margin-top: -580px;
+            margin-left: 30px;
+            position: absolute;
+            color: white;
+            border-radius: 32px;
+            overflow: scroll;
+            filter: drop-shadow(5px 5px 10px #8e9498);
+        }
+        #rank-div::-webkit-scrollbar{
+            display: none;
+        }
+        td{
+            padding: 10px 8px 10px 0;
+            font-size: 17px;
+        }
+        table{
+            margin: auto;
+        }
+        #score{
+            text-align: right;
+            padding-left: 124px;
+        }
+        #close-div{
+            font-size: 34px;
+            padding-left: 325px;
+            color: #86cfdb;
+            margin-top: -2px;
+        }
+        #close-div:hover{
+            cursor:pointer;
+        }
+        #ttt{
+            position:relative;
+            margin-right: 4px;
+        }
+        #mute{
+            position:relative;
+            color: #18bf79;
+            padding-top: 60px;
+            margin-left: 390px;
+            margin-top: 10px;
+            opacity: 0.4;
+            /* text-align: right; */
+            /* background: url(static/img/mute.png) no-repeat; */
+            /* background-size: 72%; */
+        }
+        #tt{
+            /* color: #5374df; */
+            color: #18bf79;
+            font-weight: bold;
+            font-size: 24px;
+            text-align: right;
+            margin-top: -698px;
+            /* margin-left: 382px; */
+        }
+        #declaration{
+            position: relative;
+            width: 342px;
+            height: 480px;
+            border-radius: 30px;
+            background: rgb(9, 167, 184);
+            margin-left: 39px;
+            margin-top: 80px;
+            text-align: center;
+            font-size: 23px;
+            color: white;
+            font-family: 汉仪书魂体简;
+            overflow:scroll;
+        }
+        #declaration::-webkit-scrollbar{
+            display: none;
+        }
+        .pp{
+            /* margin-right: 4px; */
+            padding-left: 12px;
+            text-align: left;
+            font-size: 20px;
+        }
+        #close-dec{
+            font-size: 32px;
+            text-align: right;
+            margin-right: 10px;
+            margin-top: 3px;
+        }
+        #close-dec:hover{
+            cursor:pointer;
+        }
+        @media (min-width: 0px) and (max-width:768px) {
+            #outer{
+                width: 340px;
+                height: 760px;
+            }
+            #inner6{
+                margin-top: -912px;
+            }
+            .logins{
+                margin-left: -4px;
+            }
+            #rank-div{
+                width: 340px;
+                margin-left: 0px;
+            }
+            #close-div{
+            padding-left: 310px;
+            }
+            #tt{
+                margin-top: -758px;
+                /* margin-left: 296px; */
+            }
+            #mute{
+            margin-left: 310px;
+            }
+            #declaration{
+                margin-left: 0px;
+            }
+        }
+    </style>
+    <script>
+        function color0(){
+            it0.style.background="rgb(160,160,160)";
+        }
+        function color1(){
+            it1.style.background="rgb(160,160,160)";
+        }
+        function color2(){
+            it2.style.background="rgb(160,160,160)";
+        }
+        function color3(){
+            it3.style.background="rgb(160,160,160)";
+        }
+        function color4(){
+            it4.style.background="rgb(160,160,160)";
+        }
+        function color5(){
+            it5.style.background="rgb(160,160,160)";
+        }
+        function colors(){
+            it5.style.background="rgb(160,160,160)";
+            it4.style.background="rgb(160,160,160)";
+            it3.style.background="rgb(160,160,160)";
+            it2.style.background="rgb(160,160,160)";
+            it1.style.background="rgb(160,160,160)";
+            it0.style.background="rgb(160,160,160)";
+        }
+        function rr(y){
+            a = Math.floor(Math.random()*4);
+            if(a==0){
+                y.style.marginLeft="0%";
+            }
+            if(a==1){
+                y.style.marginLeft="25%";
+            }
+            if(a==2){
+                y.style.marginLeft="50%";
+            }
+            if(a==3){
+                y.style.marginLeft="75%";
+            }
+        }
+        function initial(){
+            it0.style.background="black";
+            it1.style.background="black";
+            it2.style.background="black";
+            it3.style.background="black";
+            // it4.style.background="rgb(160,160,160)";
+            it5.style.background="black";
+        }
+        // function rectClick(event) {
+        //     alert('x:' + event.offsetX + "  y:" +  event.offsetY);
+        // }
+        // 450,580 550,623 580,56 750,580
+        function mp3(d){
+            if(d==2){
+                return;
+            }
+            var y = Math.floor(Math.random()*4);
+            if(y==0){
+                new Audio("static/music/a.mp3").play();
+            }
+            if(y==1){
+                new Audio("static/music/b.mp3").play();
+            }
+            if(y==2){
+                new Audio("static/music/c.mp3").play();
+            }
+            if(y==3){
+                new Audio("static/music/d.mp3").play();
+            }
+        }
+        function doPost(){
+            var username = $("#username").val();
+            var password = $("#password").val();
+            var vcode = $("#vcode").val();
+            var param = "username=" + username + "&password=" + password + "&vcode=" + vcode + "&score=" + score;
+            $.post('php/login.php', param, function(data){
+                if (data == 'login-pass'){
+                    // alert("提交成功");
+                    var logins1 = document.getElementsByClassName("logins");
+                    logins1[0].style.display="none";
+                }
+                else if (data == 'login-fail'){
+                    alert("提交失败");
+                }
+                else if (data == 'phone-error'){
+                    alert("手机号有误");
+                }
+                else if (data == 'vcode-error'){
+                    alert("验证码有误");
+                }
+                else if (data == 'no-fast'){
+                    alert("未超过历史成绩，提交失败")
+                }
+                else {
+                    alert("未知错误");
+                }
+            });
+        }
+        function tourist(){ 
+            var username = "游客";
+            var password = "13000000000";
+            var vcode = "0000";
+            var param = "username=" + username + "&password=" + password + "&vcode=" + vcode + "&score=" + score;
+            $.post('php/login.php', param, function(data){
+                if (data == 'login-pass'){
+                    // alert("提交成功");
+                }
+                else if (data == 'login-fail'){
+                    alert("提交失败");
+                }
+                else if (data == 'no-fast'){
+                    alert("未超过历史成绩，提交失败");
+                }
+                else {
+                    // alert("未知错误");
+                }
+            })
+        }
+        function rank(){
+            $.get('php/rank.php', function(rows){
+                var data = eval(rows);
+                // alert(data[0].score);
+                var content = "";
+                var i = 0;
+                var rankt = document.getElementById("rank-body");
+                rankt.innerHTML = "";
+                data.forEach(rank =>{
+                    content += "<tr>";
+                    i += 1;
+                    // var v = rank['uptime'].split(" ")[0];
+                    // content += "<td>" + i + "</td>";
+                    content += "<td>" + i +'.'+ '&emsp;' + rank['user'] + "</td>";
+                    content += "<td id='score'>" + rank['score'] + "</td>";
+                    // content += "<td>" + v + "</td>";
+                    content += "<tr>";
+                });
+                $("#rank-table").append(content);
+                $("#rank-div").css('display', 'block');
+            });
+        }
+    </script>
+</head>
+<!-- onclick="rectClick(event);" -->
+<body style="overflow:scroll;">
+    <!-- <audio autoplay="autoplay" display="none" preload="auto" src="static/music/song.mp3"></audio> -->
+    <div id="bg" class="bb">
+        <div id="bgg" class="bb">
+            <!-- <div id="t1" class="tt">Game Start</div> -->
+            <div id="outer" class="tt">
+                <div id="inner1" class="ss" style="top: 0%; background: black; margin-left: 25%;" onclick="color0(),mp3(mute)">
+                    <div id="inn1" class="inn"></div>
+                </div>
+                <div id="inner2" class="ss" style="top: 0%; background: black; margin-left: 75%;" onclick="color1(),mp3(mute)">
+                    <div id="inn2" class="inn"></div>
+                </div>
+                <div id="inner3" class="ss" style="top: 0%; background: black; margin-left: 0%;" onclick="color2(),mp3(mute)">
+                    <div id="inn3" class="inn"></div>
+                </div>
+                <!-- 1-4 6-3 5-2 4-1 3-6 2-5-->
+                <div id="inner4" class="ss" style="top: 0%; background: black; margin-left: 25%;" onclick="color3(),mp3(mute)">
+                    <div id="inn4" class="inn"></div>
+                </div>
+                <div id="inner5" class="ss" style="top: 0%; background: rgb(236, 61, 61); margin-left: 50%;" onclick="color4(),mp3(mute)">
+                    <div id="start" class="inn" onclick="run()">开始</div>
+                </div>
+                <div id="inner6" class="ss" style="top: 0%; background: black; margin-left: 50%;" onclick="color5(),mp3(mute)">
+                    <div id="inn6" class="inn"></div>
+                </div>
+                <div id="noo" onclick="wns=7"></div>
+                <div class="logins">
+                    <!-- <form action="php/login.php" method="post"> -->
+                    <div id="login"><div id="login_logo">用户登录</div><div id="close">x</div></div>
+                    <div id="login">
+                        <input type="text" id="username" name="username" autofocus autocomplete="off" placeholder="昵称" maxlength=15>
+                    </div>
+                    <div id="login">
+                        <input type="password" id="password" name="password" autocomplete="off"  placeholder="手机号" onkeyup="value=value.replace(/[^\d]/g,'')" maxlength=11>
+                    </div>
+                    <div id="login">
+                        <input type="text" id="vcode" name="vcode" autocomplete="off" placeholder="验证码" maxlength=4>
+                    </div>
+                    <div id="login">
+                        <!-- <button id="submit">提交</button> -->
+                        <button id="submit" onclick="doPost()">提交</button>
+                    </div>
+                    <!-- </form> -->
+                </div>
+                <div id="rank-div" style="display:none;">
+                    <div id="close-div" onclick="ranks.style.display='none';">x</div>
+                    <table id="rank-table">
+                        <caption style="margin: -12px 10px 7px 35px; font-size: 32px; font-weight: bold; letter-spacing: 18px;">排行榜</caption>
+                        <tbody id="rank-body"></tbody>
+                    </table>
+                </div>
+                <div id="ttt"><div id="tt"></div></div>
+            <div id="mute" style="background:url(static/img/sound.png) no-repeat; background-size: 70%;"></div>
+            <div id="declaration" style="display: none;">
+                <div id="close-dec">x</div>
+                关于游戏<p class="pp">&emsp;&emsp;《别踩白块儿》是一款玩法简单，极易上手的休闲游戏，适合各年龄段的玩家。此游戏在原有基础上添加了在获得某一幸运分后有概率进入到刷分模式的隐藏关卡，未来还会增添更加创新有趣的玩法。</p>
+                <br>关于作者<p class="pp">&emsp;&emsp;clc.</p>
+                <br>关于网站<p class="pp">&emsp;&emsp;本网站由个人创建，未来还会持续更新、完善、优化。</p>
+                <br>关于更多<p class="pp">&emsp;&emsp;此作者的相关网页还有：<a href="www.baidu.com">链接甲</a>、<a href="www.baidu.com">链接乙</a></p>
+            </div>
+            </div>
+            <script>
+                var ranks = document.getElementById("rank-div");
+                var stt = document.getElementById("start");
+                var it0 = document.getElementById("inner1");
+                var it1 = document.getElementById("inner2");
+                var it2 = document.getElementById("inner3");
+                var it3 = document.getElementById("inner4");
+                var it4 = document.getElementById("inner5");
+                var it5 = document.getElementById("inner6");
+                var step = 1;
+                var score = 0;
+                var scores = 1;
+                var sl1 = document.getElementById("inn1");
+                var sl2 = document.getElementById("inn2");
+                var sl3 = document.getElementById("inn3");
+                var sl4 = document.getElementById("inn4");
+                var sl6 = document.getElementById("inn6");
+                var wn = 0;
+                var wns = 0;
+                var mute = 1;
+                var mm = document.getElementById("mute");
+                var ttl = document.getElementById("tt");
+                var dec = document.getElementById("declaration");
+                var cdec = document.getElementById("close-dec");
+                function run(){
+                    initial();
+                    mm.style.display="none";
+                    must_stop = setInterval(function(){
+                    var speeds0 = parseInt(it0.style.top) + step;
+                    var speeds1 = parseInt(it1.style.top) + step;
+                    var speeds2 = parseInt(it2.style.top) + step;
+                    var speeds3 = parseInt(it3.style.top) + step;
+                    speeds4 = parseInt(it4.style.top) + step;
+                    var speeds5 = parseInt(it5.style.top) + step;
+                    var i0 = it0.style.top = speeds0 + "%";
+                    var i1 = it1.style.top = speeds1 + "%";
+                    var i2 = it2.style.top = speeds2 + "%";
+                    var i3 = it3.style.top = speeds3 + "%";
+                    var i4 = it4.style.top = speeds4 + "%";
+                    var i5 = it5.style.top = speeds5 + "%";
+                    if (speeds5 == 120) {
+                        // wn = 6;
+                        it5.style.top="0%";
+                        if (it5.style.background!="black"&&wns==0){
+                            it5.style.background="black";
+                            rr(it5);
+                            score += scores;
+                            ttl.innerHTML= score;
+                        }
+                        else{
+                            login(6);
+                        }
+                    }
+                    else if (speeds4 == 20 ) {
+                        // wn = 5;
+                        it4.style.top="-100%";
+                        stt.innerHTML = "";
+                        if (it4.style.background!="black"&&wns==0){
+                            it4.style.background="black";
+                            rr(it4);
+                            score += scores;
+                            ttl.innerHTML= score;
+                        }
+                        else{
+                            login(5);
+                        }
+                    }
+                    else if (speeds3 == 40) {
+                        // wn = 4;
+                        it3.style.top="-80%";
+                        if (it3.style.background!="black"&&wns==0){
+                            it3.style.background="black";
+                            rr(it3);
+                            score += scores;
+                            ttl.innerHTML= score;
+                        }
+                        else{
+                            login(4);
+                        }
+                    }
+                    else if (speeds2 == 60) {
+                        // wn = 3;
+                        it2.style.top="-60%";
+                        sl3.innerHTML = "";
+                        if (it2.style.background!="black"&&wns==0){
+                            it2.style.background="black";
+                            rr(it2);
+                            score += scores;
+                            ttl.innerHTML= score;
+                        }
+                        else{
+                            login(3);
+                        }
+                    }
+                    else if (speeds1 == 80) {
+                        // wn = 2;
+                        it1.style.top="-40%";
+                        if (it1.style.background!="black"&&wns==0){
+                            it1.style.background="black";
+                            rr(it1);
+                            score += scores;
+                            ttl.innerHTML= score;
+                        }
+                        else{
+                            login(2);
+                        }
+                    }
+                    else if (speeds0 == 100) {
+                        // wn = 1;
+                        it0.style.top="-20%";
+                        if (it0.style.background!="black"&&wns==0){
+                            it0.style.background="black";
+                            rr(it0);
+                            score += scores;
+                            ttl.innerHTML= score;
+                        }
+                        else{
+                            login(1);
+                        }
+                    }
+                },13);}
+            </script>
+            <script>
+                function keyUp(e) {
+                    var cc = 0,e=e||event;
+                    cc=e.keyCode||e.which||e.charCode;
+                    //74 75 76 186
+                    if (cc==68){
+                        document.elementFromPoint(450, 680).click();
+                    }
+                    if (cc==70){
+                        document.elementFromPoint(550, 680).click();
+                    }
+                    if (cc==74){
+                        document.elementFromPoint(650, 680).click();
+                    }
+                    if (cc==75){
+                        document.elementFromPoint(750, 680).click();
+                    }
+                }
+                document.onkeyup = keyUp;
+            </script>
+            <script>
+                function login(y){
+                    if(score>1){
+                        step = 0;
+                        if(score==188){
+                            // var rd =1;
+                            var rd = Math.ceil(Math.random()*4);
+                            if(rd==1){
+                                if(confirm("本次失误让你很幸运地进入到隐藏刷分模式，确认要继续吗？")){
+                                    colors();
+                                    scores = 8;
+                                    sl3.innerHTML = "来喽";
+                                    step = 1;
+                                    return;
+                                }
+                            }
+                        }
+                        tourist();
+                        alert("恭喜你本次得分："+score+" 分，请您点击登录即可参与荣誉榜！");
+                        if (y==6){
+                            // alert(y);
+                            wn = 6;
+                            it1.style.background="#18bf79";
+                            sl2.innerHTML = "登录";
+                            it2.style.background="#18bf79";
+                            sl3.innerHTML = "排行";
+                            it3.style.background="#18bf79";
+                            sl4.innerHTML = "关于";
+                            it4.style.background="#18bf79";
+                            stt.innerHTML = "返回";
+                        }
+                        else if (y==5){
+                            // alert(y);
+                            wn = 5;
+                            it0.style.background="#18bf79";
+                            sl1.innerHTML = "登录";
+                            it1.style.background="#18bf79";
+                            sl2.innerHTML = "排行";
+                            it2.style.background="#18bf79";
+                            sl3.innerHTML = "关于";
+                            it3.style.background="#18bf79";
+                            sl4.innerHTML = "返回";
+                        }
+                        else if(y==4){
+                            // alert(y);
+                            wn = 4;
+                            it5.style.background="#18bf79";
+                            sl6.innerHTML = "登录";
+                            it0.style.background="#18bf79";
+                            sl1.innerHTML = "排行";
+                            it1.style.background="#18bf79";
+                            sl2.innerHTML = "关于";
+                            it2.style.background="#18bf79";
+                            sl3.innerHTML = "返回";
+                        }
+                        else if(y==3){
+                            // alert(y);
+                            wn = 3;
+                            it4.style.background="#18bf79";
+                            stt.innerHTML = "登录";
+                            it5.style.background="#18bf79";
+                            sl6.innerHTML = "排行";
+                            it0.style.background="#18bf79";
+                            sl1.innerHTML = "关于";
+                            it1.style.background="#18bf79";
+                            sl2.innerHTML = "返回";
+                        }
+                        else if(y==2){
+                            // alert(y);
+                            wn = 2;
+                            it3.style.background="#18bf79";
+                            sl4.innerHTML = "登录";
+                            it4.style.background="#18bf79";
+                            stt.innerHTML = "排行";
+                            it5.style.background="#18bf79";
+                            sl6.innerHTML = "关于";
+                            it0.style.background="#18bf79";
+                            sl1.innerHTML = "返回";
+                        }
+                        else if(y==1){
+                            // alert(y);
+                            wn = 1;
+                            it2.style.background="#18bf79";
+                            sl3.innerHTML = "登录";
+                            it3.style.background="#18bf79";
+                            sl4.innerHTML = "排行";
+                            it4.style.background="#18bf79";
+                            stt.innerHTML = "关于";
+                            it5.style.background="#18bf79";
+                            sl6.innerHTML = "返回";
+                        }
+                        // alert(wn);
+                        // if(-100<=speeds4<=-80){
+                        // it2.style.background="#18bf79";
+                        // it2.style.background="#18bf79";
+                        // sl3.innerHTML = "登录";
+                        // sl2.innerHTML = "排行";
+                        // }
+                        // if(-80<speeds4<=20){
+                        // it3.style.background="#18bf79";
+                        // it2.style.background="#18bf79";
+                        // sl2.innerHTML = "登录";
+                        // sl3.innerHTML = "排行";
+                        // }
+                        // clearInterval(must_stop);
+                        clearInterval(must_stop);
+                    }
+                    else{
+                        clearInterval(must_stop);
+                        alert("游戏结束，本次得分：" + score + " 分");
+                        r();
+                    }
+                }
+                function r(){
+                    location.reload();
+                }
+                window.onload = function(){
+                    var close = document.getElementById("close");
+                    var logins = document.getElementsByClassName("logins");
+                    mm.addEventListener('click',function(){
+                        if(mute==2){
+                            mute=1;
+                            mm.style.background="url(static/img/sound.png) no-repeat";
+                            mm.style.backgroundSize="70%";
+                        }
+                        else{
+                            mute=2;
+                            mm.style.background="url(static/img/mute.png) no-repeat";
+                            mm.style.backgroundSize="70%";
+                        }
+                    })
+                    cdec.addEventListener('click',function(){
+                        dec.style.display="none";
+                    })
+                    close.addEventListener('click',function(){
+                        logins[0].className="logins";})
+                    sl1.addEventListener('click',function(){
+                        if(wn==4){
+                            rank();
+                        }
+                        if(wn==5){
+                            logins[0].className="logins open";
+                            document.onkeyup = "";
+                        }
+                        if(wn==3){
+                            dec.style.display="";
+                        }
+                        if(wn==2){
+                            r();
+                        }
+                    });
+                    sl2.addEventListener('click',function(){
+                        if(wn==5){
+                            rank();
+                        }
+                        if(wn==6){
+                            logins[0].className="logins open";
+                            document.onkeyup = "";
+                        }
+                        if(wn==4){
+                            dec.style.display="";
+                        }
+                        if(wn==3){
+                            r();
+                        }
+                    }); 
+                    sl3.addEventListener('click',function(){
+                        if(wn==6){
+                            rank();
+                        }
+                        if(wn==1){
+                            logins[0].className="logins open";
+                            document.onkeyup = "";
+                        }
+                        if(wn==5){
+                            dec.style.display="";
+                        }
+                        if(wn==4){
+                            r();
+                        }
+                    });
+                    sl4.addEventListener('click',function(){
+                        if(wn==1){
+                            rank();
+                        }
+                        if(wn==2){
+                            logins[0].className="logins open";
+                            document.onkeyup = "";
+                        }
+                        if(wn==6){
+                            dec.style.display="";
+                        }
+                        if(wn==5){
+                            r();
+                        }
+                    }); 
+                    stt.addEventListener('click',function(){
+                        if(wn==2){
+                            rank();
+                        }
+                        if(wn==3){
+                            logins[0].className="logins open";
+                            document.onkeyup = "";
+                        }
+                        if(wn==1){
+                            dec.style.display="";
+                        }
+                        if(wn==6){
+                            r();
+                        }
+                    });
+                    sl6.addEventListener('click',function(){
+                        if(wn==3){
+                            rank();
+                        }
+                        if(wn==4){
+                            logins[0].className="logins open";
+                            document.onkeyup = "";
+                        }
+                        if(wn==2){
+                            dec.style.display="";
+                        }
+                        if(wn==1){
+                            r();
+                        }
+                    }); 
+                }
+                // document.elementFromPoint(640, 580).click();
+            </script>
+            <!-- <div style="width:30px; height: 300px; background-color: red;"></div> -->
+        </div>
+    </div>
+</body>
+</html>

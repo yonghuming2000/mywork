@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <title>注册</title>
+    <style>
+        table {
+            width: 600px;
+            margin: auto;
+            border-spacing: 0;
+            border: solid 1px green;
+        }
+        td {
+            height: 50px;
+            border: solid 1px gray;
+            text-align: center;
+        }
+        button {
+            width: 200px;
+            height: 35px;
+            background-color: dodgerblue;
+            color: whitesmoke;
+            border-radius: 5px;
+        }
+    </style>
+    <!-- 添加 Javascript 代码，然后在form表单中添加 onsubmit="return checkFile()" -->
+    <script>
+        function checkFile(){
+            // var file = document.getElementsByName('photo')[0].value;
+            var file = document.getElementById('photo').value;
+            alert(file);
+            if(file == null || file ==""){
+                alert("请选择要上传的文件！");
+                return false;
+            }
+            //定义允许上传的文件类型
+            var allow_ext =".jpg|.png|.gif";
+            //提取上传文件的类型
+            var ext_name = file.substring(file.lastIndexOf("."));
+            //判断上传文件类型是否允许上传
+            if(allow_ext.indexOf(ext_name) == -1){
+                var errMsg="该文件不允许上传,请上传"+allow_ext+"类型的文件,当前文件类型为："+ext_name;
+                alert(errMsg);
+                return false;
+            }
+            return true;
+        }
+
+        function doReg(){
+            checkFile();
+
+            var data=new FormData();   //带附件上传
+            data.append("username",$.trim($("#username").val()));
+            data.append("password",$.trim($("#password").val()));
+            data.append("photo",$("#photo").prop("files")[0]);
+            $.ajax({
+                url:'reg.php',
+                type:'POST',
+                data: data,
+                cache:false,
+                processData: false,
+                contentType: false,
+
+                success : function(data) {
+                    document.write(data);   //直接将当前页面全部覆盖
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <!-- 上传附件，必须要加上 enctype="multipart/form-data" 属性  -->
+<!--         <form action="reg.php" method="POST" enctype="multipart/form-data" onsubmit="return checkFile()"> -->
+        <tr>
+            <td width="40%">用户名：</td>
+            <td width="60%"><input type="text" id="username" name="username" /></td>
+        </tr> 
+        <tr> 
+            <td>密&nbsp;&nbsp;码：</td>
+            <td><input type="text" id="password" name="password"/></td>
+        </tr>
+        <tr> 
+            <td>头&nbsp;&nbsp;像：</td>
+            <td><input type="file" name="photo" id="photo"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button onclick="doReg()">注册</button></td>
+        </tr>
+<!--         </form> -->
+    </table>
+</body>
+</html>

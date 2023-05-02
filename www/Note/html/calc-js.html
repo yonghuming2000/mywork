@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蜗牛计算器-DIV版</title>
+    <!-- 下面的是CSS样式 -->
+    <style>
+        /* 设置顶部标题栏样式 */
+        #top {
+            width: 450px;
+            height: 50px;
+            margin: auto;
+            background-color: gray;
+            /* border-radius: 10px; */
+            /* border-top-left-radius: 10px; */
+        }
+        #top .point {
+            width: 20px;
+            height: 20px;
+            float: left;
+            margin-left: 10px;
+            margin-top: 15px;
+            border-radius: 10px;
+        }
+        #top .red {
+            background-color: red;
+        }
+        #top .blue {
+            background-color: blue;
+        }
+        #top .green {
+            background-color: green;
+        }
+        #calc-title {
+            font-size: 22px;
+            color: white;
+            float: right;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        /* 设置结果显示栏样式 */
+        #result {
+            width: 436px;
+            height: 50px;
+            margin: auto;
+            background-color: white;
+            border: solid 2px red;
+            text-align: right;
+            font-size: 35px;
+            padding-right: 10px;
+        }
+
+        /* 设置按钮区域的样式 */
+        #button {
+            width: 450px;
+            height: 422px;
+            background-color: gray;
+            margin: auto;
+        }
+
+        #button div {
+            width: 108px;
+            height: 80px;
+            float: left;
+            background-color: #7fffd4;
+            margin: 2px;
+            line-height: 80px;
+            text-align: center;
+            font-size: 26px;
+        }
+
+        /* 使用伪类选择器设置鼠标悬停效果 */
+        #button div:hover {
+            background-color: orangered;
+        }
+
+    </style>
+
+    <!-- 下面的是JS代码 -->
+    <script type="text/javascript">
+        // 与function同级的变量，称为全局变量，可以在当前范围内的任意function中使用
+        // 定义一个开关变量，用于判断最后一次输入是否是运算符
+        var isOperatorClicked = false;    
+
+        // 给函数传递参数，用于输入哪一个数字
+        function clickNumber(number) {
+            var result = document.getElementById("result");
+            // result.innerHTML += number;  
+            result.innerHTML = result.innerHTML + number;
+            isOperatorClicked = false;     // 当用户再次点击了数字后，重置开关为可点击运算符
+        }
+
+        // 输入运算符
+        function clickOperator(operator) {
+            var result = document.getElementById("result");
+            if (isOperatorClicked == false) {
+                result.innerHTML += operator;
+                isOperatorClicked = true;   // 表示运算符被点击
+            }
+        }
+
+        // 计算结果
+        function doCalc() {
+            var result = document.getElementById("result");
+            var expression = result.innerHTML;
+            result.innerHTML = eval(expression);
+        }
+
+        // 清空结果
+        function doClear() {
+            document.getElementById("result").innerHTML = "";
+            isOperatorClicked = false;
+        }
+
+        // 回退删除最后一个字符
+        function doBack() {
+            var result = document.getElementById("result");
+            var len = result.innerHTML.length;    // 取字符串长度
+            result.innerHTML = result.innerHTML.substr(0,len-1);    // 取字符串的其中一部分内容
+        }
+    </script>
+
+</head>
+<body>
+    <div id="top">
+        <div class="point red"></div>
+        <div class="point blue"></div>
+        <div class="point green"></div>
+        <div id="calc-title">蜗牛计算器</div>
+    </div>
+
+    <div id="result" name="result"></div>
+
+    <div id="button">
+        <div onclick="doClear()">AC</div>
+        <div>+/-</div>
+        <div onclick="clickOperator('%')">%</div>
+        <div onclick="clickOperator('/')">÷</div>
+        <div onclick="clickNumber(7)">7</div>
+        <div onclick="clickNumber(8)">8</div>
+        <div onclick="clickNumber(9)">9</div>
+        <div onclick="clickOperator('*')">*</div>
+        <div onclick="clickNumber(4)">4</div>
+        <div onclick="clickNumber(5)">5</div>
+        <div onclick="clickNumber(6)">6</div>
+        <div onclick="clickOperator('-')">-</div>
+        <div onclick="clickNumber(1)">1</div>
+        <div onclick="clickNumber(2)">2</div>
+        <div onclick="clickNumber(3)">3</div>
+        <div onclick="clickOperator('+')">+</div>
+        <div onclick="clickNumber(0)">0</div>
+        <div onclick="doBack()">删除</div>
+        <div onclick="clickOperator('.')">.</div>
+        <div onclick="doCalc()">=</div>
+    </div>
+
+</body>
+</html>

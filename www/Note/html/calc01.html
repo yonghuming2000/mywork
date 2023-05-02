@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  <!-- 设置字符集 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    <!-- 配置与IE和Edge的兼容性 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      <!-- 设置在手机上的显示效果 -->
+    <title>蜗牛计算器-基于Table实现</title>
+    <style>
+        /* 类选择器，以 . 开头 */
+        .button {
+            background-color: gray;    /* 设置背景色为蓝色 */
+            margin: auto;                /* 设置容器水平居中 */
+        }
+
+        /* 层次选择器，选择button类下面的所有标签为td的元素 */
+        .button tr td {
+            background-color: #7fffd4;   /* 颜色的RGB编码 */
+            width: 25%;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        /* 使用DIV+圆角的方式绘制三个小圆点，同时通过设置DIV的Float属性，实现DIV浮动，不独占一行 */
+        .point-red {
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            float: left;
+            margin-left: 10px;
+            border-radius: 10px;
+        }
+        .point-blue {
+            width: 20px;
+            height: 20px;
+            background-color: blue;
+            float: left;
+            margin-left: 10px;
+            border-radius: 10px;
+        }
+        .point-green {
+            width: 20px;
+            height: 20px;
+            background-color: green;
+            float: left;
+            margin-left: 10px;
+            border-radius: 10px;
+        }
+        .title {
+            color: white;   /* 文字的颜色 */
+            font-size: 22px;  /* 文字的大小 */
+            float: right;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 两行，一列，完成顶部和结果栏 -->
+    <table width="450" height="120" border="0" bgcolor="gray" cellspacing="5" align="center">
+        <tr>
+            <td bgcolor="gray" height="50">
+                <div class="point-red"></div>
+                <div class="point-blue"></div>
+                <div class="point-green"></div>
+                <div class="title">蜗牛计算器</div>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="white" style="border: solid 2px red;"></td>
+        </tr>
+    </table>
+
+    <!-- 五行，四列，绘制计算器按钮 -->
+    <table width="450" height="400" border="0" cellspacing="4" class="button">
+        <tr>
+            <td>AC</td>
+            <td>+/-</td>
+            <td>%</td>
+            <td>÷</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>*</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>删除</td>
+            <td>.</td>
+            <td>=</td>
+        </tr>
+    </table>
+</body>
+</html>

