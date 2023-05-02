@@ -1,9 +1,0 @@
-#!/bin/sh
-
-php-fpm &
-
-nginx &
-
-mysqld_safe &
-
-tail -F /var/log/nginx/error.log /var/log/nginx/access.log
